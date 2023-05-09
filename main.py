@@ -38,9 +38,9 @@ def update_user_list(user_listbox):
 # Create the main window
 root = tk.Tk()
 root.title("Intellica - Utilizador Git")
-icon = PhotoImage(file = 'img/icon.png')
+# icon = PhotoImage(file = 'img/icon.png')
 # Icon set for program window
-root.iconphoto(False, icon)
+# root.iconphoto(False, icon)
 # Set the default window size
 root.geometry("500x500")
 
