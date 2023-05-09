@@ -4,7 +4,8 @@ import utils
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import PhotoImage
-
+import os
+basedir = os.path.dirname(__file__)
 
 def add_key():
     # Get the path to the public key file
@@ -39,8 +40,8 @@ def update_user_list(user_listbox):
 root = tk.Tk()
 root.title("Intellica - Utilizador Git")
 # icon = PhotoImage(file = 'img/icon.png')
-# Icon set for program window
-# root.iconphoto(False, icon)
+# Set window icon.
+root.iconbitmap(os.path.join(basedir, "./icon.ico"))
 # Set the default window size
 root.geometry("500x500")
 
